@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className='w-full px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]'>
+        <div className='w-full px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]' id='about'>
             <div className='max-w-[1200px] mx-auto min-h-screen flex justify-center items-center py-[100px]'>
             <div className='w-full flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start gap-[100px]'>
                 <div className='max-w-[500px] w-full'>

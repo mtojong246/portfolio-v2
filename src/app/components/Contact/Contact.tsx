@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <div className='w-full px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]'>
+        <div className='w-full px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]' id='contact'>
             <div className='max-w-[1200px] mx-auto min-h-screen flex justify-start items-center py-[100px]'>
                 <div className="w-full">
                     <p className='mb-[80px] text-[32px] text-[#CCC9EC] font-bold'><span className='text-[#1AFFC9]'>// </span>Contact</p>
