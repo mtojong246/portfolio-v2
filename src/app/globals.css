@@ -23,26 +23,6 @@
   animation-fill-mode: backwards;
 }
 
-.fade-left-500 {
-  animation-name: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1500ms; /* don't forget to set a duration! */
-  animation-delay: 500ms;
-  animation-fill-mode: backwards;
-}
-
-.fade-left-600 {
-  animation-name: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1500ms; /* don't forget to set a duration! */
-  animation-delay: 600ms;
-  animation-fill-mode: backwards;
-}
-
-.fade-left-700 {
-  animation-name: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1500ms; /* don't forget to set a duration! */
-  animation-delay: 700ms;
-  animation-fill-mode: backwards;
-}
 
 .fade-down {
   animation-name: fadeInDown;
