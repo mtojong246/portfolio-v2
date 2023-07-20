@@ -2,10 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+.fade-left {
+  animation-name: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1500ms; /* don't forget to set a duration! */
+  animation-delay: 1500ms;
+  animation-fill-mode: backwards;
+}
+
+.fade-left-delay {
+  animation-name: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1500ms; /* don't forget to set a duration! */
+  animation-delay: 1600ms;
+  animation-fill-mode: backwards;
+}
+
+.fade-down {
+  animation-name: fadeInDown;
+  animation-duration: 1500ms;
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1500ms;
+  animation-delay: 500ms;
+  animation-fill-mode: backwards;
 }
 
 @media (prefers-color-scheme: dark) {
