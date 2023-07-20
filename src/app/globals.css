@@ -9,6 +9,18 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.project:hover .fade-project-down {
+  animation-name: fadeInDown;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+
+.project:hover .fade-project-up {
+  animation-name: fadeInUp;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+
 .fade-left {
   animation-name: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1500ms; /* don't forget to set a duration! */
