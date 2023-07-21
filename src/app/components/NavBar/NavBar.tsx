@@ -24,13 +24,13 @@ export default function NavBar() {
                     <p className='text-sm text-[#1AFFC9]'>M</p>
                 </div>
                 <div className='hidden md:flex justify-end items-center gap-[40px]'>
-                    <button className="fade-down text-sm text-[#CCC9EC] font-bold" value='about' onClick={handleScroll}>
+                    <button className="fade-down text-sm text-[#CCC9EC] font-bold hover:text-[#1AFFC9] transition-all ease-in-out duration-300" value='about' onClick={handleScroll}>
                         <span className='text-[#1AFFC9]'>// </span>About
                     </button>
-                    <button className="fade-down text-sm text-[#CCC9EC] font-bold" value='projects' onClick={handleScroll}>
+                    <button className="fade-down text-sm text-[#CCC9EC] font-bold hover:text-[#1AFFC9] transition-all ease-in-out duration-300" value='projects' onClick={handleScroll}>
                         <span className='text-[#1AFFC9]'>// </span>Projects
                     </button>
-                    <button className="fade-down text-sm text-[#CCC9EC] font-bold" value='contact' onClick={handleScroll}>
+                    <button className="fade-down text-sm text-[#CCC9EC] font-bold hover:text-[#1AFFC9] transition-all ease-in-out duration-300" value='contact' onClick={handleScroll}>
                         <span className='text-[#1AFFC9]'>// </span>Contact
                     </button>
                     <button className='fade-down w-[77px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
