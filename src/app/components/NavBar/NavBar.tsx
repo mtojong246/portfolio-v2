@@ -1,11 +1,32 @@
 'use client';
 import { MouseEvent } from "react"
 import Sidebar from "./Sidebar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 export default function NavBar() {
     const [ openSidebar, setOpenSidebar ] = useState(false);
+    const [isScrollingUp, setIsScrollingUp] = useState(true);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+    const handleDirectionalScroll = () => {
+        const currentScrollPos = window.scrollY;
+        if (currentScrollPos) {
+            setIsScrollingUp(currentScrollPos < prevScrollPos);
+            setPrevScrollPos(currentScrollPos);
+        }
+    };
+
+
+    useEffect(() => {
+        // Add scroll event listener on component mount
+        window.addEventListener('scroll', handleDirectionalScroll);
+
+        // Clean up the event listener on component unmount
+        return () => {
+        window.removeEventListener('scroll', () => handleDirectionalScroll);
+        };
+    }, [prevScrollPos]);
 
     const toggleSidebar = () => setOpenSidebar(!openSidebar);
 
@@ -19,7 +40,7 @@ export default function NavBar() {
 
     return (
         <>
-            <div className='w-full bg-[#001224] p-5 flex justify-between fixed z-10'>
+            <div className='w-full bg-[#001224] p-5 flex justify-between fixed z-10 transition-all ease-in-out duration-300' style={{ transform: isScrollingUp ? 'translateY(0)' : 'translateY(-100%)' }}>
                 <div className='fade-in w-[30px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
                     <p className='text-sm text-[#1AFFC9]'>M</p>
                 </div>
