@@ -1,6 +1,8 @@
 'use client';
 import { projects, Project } from "@/app/data/projects";
 import { useState, useEffect } from "react";
+import CarouselComp from "./CarouselComp";
+
 
 export default function Modal({ toggleModal, currentProject }: { toggleModal: () => void, currentProject: string }) {
     const [ proj, setProj ] = useState<Project>({} as Project);
@@ -16,8 +18,10 @@ export default function Modal({ toggleModal, currentProject }: { toggleModal: ()
     return (
         <>
         <div onClick={toggleModal} className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-slate-700 opacity-50 h-screen'></div>
-        <div className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-white h-screen flex flex-col md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] md:h-[700px] md:w-[700px]'>
-            <div className='w-full h-[400px] bg-slate-500'></div>
+        <div className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-white h-screen flex flex-col md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] md:h-[900px] md:w-[800px]'>
+            <div className='w-full bg-slate-500'>
+                <CarouselComp screenshots={proj.screenshots}/>
+            </div>
             {proj && (
                 <div className='w-full grow p-7 flex flex-col justify-between items-start bg-white'>
                     <div className='w-full'>

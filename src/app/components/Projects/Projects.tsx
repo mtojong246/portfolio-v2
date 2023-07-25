@@ -19,7 +19,7 @@ export default function Projects() {
                         <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                         {projects.map(project => (
                             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} delay={100} key={project.id}>
-                                <div className='project group w-full h-[220px] bg-slate-500 cursor-pointer'>
+                                <div style={{backgroundImage: `url(${project.screenshots[0]})`}} className='project group w-full h-[220px] bg-cover bg-center cursor-pointer'>
                                     <div className='relative z-10 transition-all ease-in-out duration-300 opacity-0 group-hover:opacity-100 bg-white w-full h-full flex flex-col justify-between items-center p-5'>
                                         <div className='text-center'>
                                             <p className='text-[#434343] text-[24px] font-bold fade-project-down'>{project.name}</p>
