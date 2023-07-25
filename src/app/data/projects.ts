@@ -32,7 +32,7 @@ export const projects = [
         name: 'QuizMe',
         description: 'A full stack web app inspired by Quizlet, which provides students a tool for creating and reviewing digital flashcards. Includes "Flashcard" and "Learn" modes.',
         screenshots: [],
-        website: 'https://quiz-me-vxb5.vercel.app/',
+        website: 'https://quiz-me-mtojong246.vercel.app/',
         github: 'https://github.com/mtojong246/quiz-me',
         frontend: 'Next',
         backend: 'PostgreSQL',

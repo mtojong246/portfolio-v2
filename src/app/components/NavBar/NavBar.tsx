@@ -38,12 +38,19 @@ export default function NavBar() {
         })
     }
 
+    const scrollTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <>
             <div className='w-full bg-[#001224] p-5 flex justify-between fixed z-10 transition-all ease-in-out duration-300' style={{ transform: isScrollingUp ? 'translateY(0)' : 'translateY(-100%)' }}>
-                <div className='fade-in w-[30px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
+                <button onClick={scrollTop}><div className='fade-in w-[30px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
                     <p className='text-sm text-[#1AFFC9]'>M</p>
-                </div>
+                </div></button>
                 <div className='hidden md:flex justify-end items-center gap-[40px]'>
                     <button className="fade-down text-sm text-[#CCC9EC] font-bold hover:text-[#1AFFC9] transition-all ease-in-out duration-300" value='about' onClick={handleScroll}>
                         <span className='text-[#1AFFC9]'>// </span>About
