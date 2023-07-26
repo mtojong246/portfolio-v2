@@ -3,7 +3,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll"
 
 export default function About() {
     return (
-        <div className='w-full px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]' id='about'>
+        <div className='w-full px-[25px]' id='about'>
             <div className='max-w-[1200px] mx-auto min-h-screen flex justify-center items-center py-[100px]'>
             <div className='w-full flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start gap-[100px]'>
                 <div className='lg:max-w-[500px] w-full'>

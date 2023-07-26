@@ -20,7 +20,7 @@ export const projects = [
         name: 'myPAbox',
         description: '',
         screenshots: [
-            'http://via.placeholder.com/640x360'
+            '/myPabox/pa_main.png',
         ],
         website: '',
         github: '',
