@@ -45,10 +45,13 @@ export default function NavBar() {
         })
     }
 
+    const refreshPage = () => {
+        window.location.reload();
+    }
     return (
         <>
             <div className='w-full bg-[#001224] p-5 flex justify-between fixed z-20 transition-all ease-in-out duration-300' style={{ transform: isScrollingUp ? 'translateY(0)' : 'translateY(-100%)' }}>
-                <button onClick={scrollTop}><div className='fade-in w-[30px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
+                <button onClick={refreshPage}><div className='fade-in w-[30px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
                     <p className='text-sm text-[#1AFFC9]'>M</p>
                 </div></button>
                 <div className='hidden md:flex justify-end items-center gap-[40px]'>
