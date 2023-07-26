@@ -61,7 +61,7 @@ export default function NavBar() {
                     <button className="fade-down text-sm text-[#CCC9EC] font-bold hover:text-[#1AFFC9] transition-all ease-in-out duration-300" value='contact' onClick={handleScroll}>
                         <span className='text-[#1AFFC9]'>// </span>Contact
                     </button>
-                    <a href="#_" className="relative inline-block px-4 py-1 group fade-down">
+                    <a href="https://docs.google.com/document/d/1U6BWD7-W_cP7fa1Cf-9huOf2AgqC-afd570T14RBJyU/edit?usp=sharing" target='_blank' rel='noopener noreferrer' className="relative inline-block px-4 py-1 group fade-down">
                         <span className="absolute inset-0 w-full h-full rounded transition duration-300 ease-out transform translate-x-1 translate-y-1 bg-[#1AFFC9] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full bg-[#001224] rounded border-2 border-[#1AFFC9] group-hover:bg-[#1AFFC9]"></span>
                         <span className="relative bottom-[2px] text-xsm text-[#1AFFC9] group-hover:text-[#001224]">resume</span>
