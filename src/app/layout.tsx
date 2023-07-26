@@ -1,9 +1,10 @@
 import './globals.css'
 import 'animate.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
+import { Fira_Code } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const fira = Fira_Code({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Melanie Tojong',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={fira.className}>{children}</body>
     </html>
   )
 }
