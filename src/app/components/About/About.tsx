@@ -21,7 +21,7 @@ export default function About() {
                     <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce={true} delay={300}><p className='fade-left-600 text-[18px] text-[#CCC9EC] ml-8 mt-3'>
                         Here are some tools I've been working with:
                     </p></AnimationOnScroll>
-                    <div className='w-full grid grid-cols-3 md:grid-cols-3 mt-6 gap-y-[1px]'>
+                    <div className='w-full grid grid-cols-2 sm:grid-cols-3 mt-6 gap-y-[1px]'>
                     <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce={true} delay={400}><div className='text-reg text-[#A4A2BC] ml-8 flex justify-start items-center gap-1'><img src='/chevrons-right.svg' className='w-[16px] h-[16px]' />HTML</div></AnimationOnScroll>
                     <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce={true} delay={400}><div className='text-reg text-[#A4A2BC] ml-8 flex justify-start items-center gap-1'><img src='/chevrons-right.svg' className='w-[16px] h-[16px]' />React</div></AnimationOnScroll>
                     <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce={true} delay={400}><div className='text-reg text-[#A4A2BC] ml-8 flex justify-start items-center gap-1'><img src='/chevrons-right.svg' className='w-[16px] h-[16px]' />PostgreSQL</div></AnimationOnScroll>

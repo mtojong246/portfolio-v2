@@ -6,8 +6,8 @@ export default function CarouselComp({ screenshots }: { screenshots: string[] })
     return (
         <Carousel showThumbs={false} showStatus={false}>
         {screenshots && screenshots.map((shot, i) => (
-            <div key={i}>
-                <img src={shot} alt=''/>
+            <div className='w-full' key={i}>
+                <img src={shot} alt='' className='object-fill object-center'/>
             </div>
         ))}
         </Carousel>

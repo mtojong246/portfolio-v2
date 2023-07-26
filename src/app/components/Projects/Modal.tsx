@@ -19,7 +19,7 @@ export default function Modal({ toggleModal, currentProject }: { toggleModal: ()
         <>
         <div onClick={toggleModal} className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-slate-700 opacity-50 h-screen'></div>
         <div className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-white h-screen flex flex-col md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] md:h-[900px] md:w-[800px]'>
-            <div className='w-full bg-slate-500'>
+            <div className='w-full bg-white'>
                 <CarouselComp screenshots={proj.screenshots}/>
             </div>
             {proj && (

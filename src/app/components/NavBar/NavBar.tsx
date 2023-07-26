@@ -47,7 +47,7 @@ export default function NavBar() {
 
     return (
         <>
-            <div className='w-full bg-[#001224] p-5 flex justify-between fixed z-10 transition-all ease-in-out duration-300' style={{ transform: isScrollingUp ? 'translateY(0)' : 'translateY(-100%)' }}>
+            <div className='w-full bg-[#001224] p-5 flex justify-between fixed z-20 transition-all ease-in-out duration-300' style={{ transform: isScrollingUp ? 'translateY(0)' : 'translateY(-100%)' }}>
                 <button onClick={scrollTop}><div className='fade-in w-[30px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
                     <p className='text-sm text-[#1AFFC9]'>M</p>
                 </div></button>
@@ -61,13 +61,24 @@ export default function NavBar() {
                     <button className="fade-down text-sm text-[#CCC9EC] font-bold hover:text-[#1AFFC9] transition-all ease-in-out duration-300" value='contact' onClick={handleScroll}>
                         <span className='text-[#1AFFC9]'>// </span>Contact
                     </button>
-                    <button className='fade-down w-[77px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
+                    <a href="#_" className="relative inline-block px-4 py-1 group fade-down">
+                        <span className="absolute inset-0 w-full h-full rounded transition duration-300 ease-out transform translate-x-1 translate-y-1 bg-[#1AFFC9] group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span className="absolute inset-0 w-full h-full bg-[#001224] rounded border-2 border-[#1AFFC9] group-hover:bg-[#1AFFC9]"></span>
+                        <span className="relative bottom-[2px] text-xsm text-[#1AFFC9] group-hover:text-[#001224]">resume</span>
+                    </a>
+                    {/* <button className='fade-down w-[77px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
                         <p className='text-xsm text-[#1AFFC9]'>resume</p>
-                    </button>
+                    </button> */}
                 </div>
-                <button onClick={toggleSidebar} className='md:hidden'><img src='/menu.svg' alt='menu-icon' className='w-[30px] h-[30px] md:hidden'/></button>
+                <div id="nav-icon1" onClick={toggleSidebar} className={`${openSidebar ? 'open' : ''} md:hidden`}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                {/* <button onClick={toggleSidebar} className='md:hidden'><img src='/menu.svg' alt='menu-icon' className='w-[30px] h-[30px] md:hidden'/></button> */}
             </div>
-            {openSidebar && <Sidebar toggleSidebar={toggleSidebar} />}
+            <Sidebar toggleSidebar={toggleSidebar} openSidebar={openSidebar} handleScroll={handleScroll}/>
         </>
     )
 }
+

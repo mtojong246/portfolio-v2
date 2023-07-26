@@ -10,6 +10,7 @@ export interface Project {
     backend?: string;
     styles: string;
     language: string;
+    delay: number;
 }
 
 export const projects = [
@@ -18,13 +19,16 @@ export const projects = [
         code: 'my-pa-box',
         name: 'myPAbox',
         description: '',
-        screenshots: [],
+        screenshots: [
+            'http://via.placeholder.com/640x360'
+        ],
         website: '',
         github: '',
         frontend: 'React(Redux)',
         backend: 'Firebase',
         styles: 'Tailwind',
         language: 'TypeScript',
+        delay: 100,
     },
     {
         id: 2,
@@ -46,6 +50,7 @@ export const projects = [
         backend: 'PostgreSQL',
         styles: 'Tailwind',
         language: 'TypeScript',
+        delay: 200,
     },
     {
         id: 3,
@@ -65,6 +70,7 @@ export const projects = [
         backend: 'Firebase',
         styles: 'CSS',
         language: 'JavaScript',
+        delay: 300,
     },
     {
         id: 4,
@@ -84,19 +90,29 @@ export const projects = [
         backend: '',
         styles: 'SCSS',
         language: 'JavaScript',
+        delay: 400,
     },
     {
         id: 5,
         code: 'pantry',
         name: 'Pantry',
         description: 'A full-stack website that generates recipes based on items in your pantry. Includes a customizable nutrition tracker, food log and grocery list.',
-        screenshots: [],
+        screenshots: [
+            '/pantry/pantry_title.png',
+            '/pantry/pantry_pantry.png',
+            '/pantry/pantry_recipes.png',
+            '/pantry/pantry_ingredients.png',
+            '/pantry/pantry_nutrition.png',
+            '/pantry/pantry_log.png',
+            '/pantry/pantry_grocery.png',
+        ],
         website: 'https://mtojong246.github.io/pantry-app/',
         github: 'https://github.com/mtojong246/pantry-app',
         frontend: 'React',
         backend: 'PostgreSQL',
         styles: 'SCSS',
         language: 'JavaScript',
+        delay: 500
     },
     {
         id: 6,
@@ -115,5 +131,6 @@ export const projects = [
         backend: '',
         styles: 'SCSS',
         language: 'JavaScript',
+        delay: 600
     }
 ]
