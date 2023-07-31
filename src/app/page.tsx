@@ -12,8 +12,9 @@ import { useEffect } from "react";
 export default function Home() {
   
   useEffect(() => {
-    window.onbeforeunload = function () {
+    window.onunload = function () {
       window.scrollTo(0,0);
+      
     };
   }, [])
 

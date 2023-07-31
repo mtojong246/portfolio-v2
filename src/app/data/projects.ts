@@ -6,6 +6,7 @@ export interface Project {
     screenshots: string[];
     website: string;
     github: string;
+    figma?: string;
     frontend: string;
     backend?: string;
     styles: string;
@@ -17,13 +18,17 @@ export const projects = [
     {
         id: 1,
         code: 'my-pa-box',
-        name: 'myPAbox',
-        description: '',
+        name: 'myPAbox Admin Dashboard',
+        description: 'An admin dashboard for creating, updating and deleting school data points to be displayed on the main myPabox website. **ONGOING**',
         screenshots: [
-            '/myPabox/pa_main.png',
+            '/myPabox/pa_schools.png',
+            '/myPabox/pa_sidebar.png',
+            '/myPabox/pa_general_info.png',
+            '/myPabox/pa_degree_info.png',
         ],
         website: '',
         github: '',
+        figma: 'https://www.figma.com/file/ezfFgsG9aRcyJbAqOE573H/myPAbox-Admin-Mockup?type=design&node-id=319%3A679&mode=design&t=QOqo0SvKMzGuzXM2-1',
         frontend: 'React(Redux)',
         backend: 'Firebase',
         styles: 'Tailwind',

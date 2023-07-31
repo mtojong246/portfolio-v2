@@ -33,12 +33,20 @@ export default function Modal({ toggleModal, currentProject }: { toggleModal: ()
                     </div>
                     <div className='flex justify-between items-center w-full'>
                         <div className='flex justify-center items-center gap-4'>
+                        {proj.figma ? (
+                            <a href={proj.figma} target='_blank' rel='noreferrer noopener'>
+                                <button className='transition-all duration-500 ease-in-out text-[#434343] hover:bg-[#E31B6D] hover:text-white border-2 border-[#E31B6D] py-2 px-6'>View Mock-up</button>
+                            </a>
+                        ): (
+                        <>
                             <a href={proj.website} target='_blank' rel='noreferrer noopener'>
                                 <button className='transition-all duration-500 ease-in-out text-[#434343] hover:bg-[#E31B6D] hover:text-white border-2 border-[#E31B6D] py-2 px-6'>Website</button>
                             </a>
                             <a href={proj.github} target='_blank' rel='noreferrer noopener'>
                                 <button className='transition-all duration-500 ease-in-out text-[#434343] hover:bg-[#E31B6D] hover:text-white border-2 border-[#E31B6D] py-2 px-6'>Source Code</button>
                             </a>
+                        </>
+                            )}
                         </div>
                         <button onClick={toggleModal}><img src='/x.svg' alt='close' className='w-[25px] h-[25px]'/></button>
                     </div>
