@@ -18,13 +18,11 @@ export default function Projects() {
                 navbar.style.display = 'none';
             } else {
                 document.body.style.overflow = 'scroll';
-                navbar.style.display = 'block';
+                navbar.style.display = 'flex';
             }
         }
         
     }, [openModal])
-
-    console.log(openModal)
 
     return (
         <>
