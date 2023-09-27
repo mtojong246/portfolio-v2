@@ -34,10 +34,10 @@ export default function Projects() {
                         {projects.map(project => (
                             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} delay={project.delay} key={project.id}>
                                 <div className='relative project group w-full cursor-pointer lg:h-[350px]'>
-                                    <img src={project.screenshots[0]} className='object-cover w-full h-full' />
+                                    <img src={project.screenshots[0]} className={`object-cover w-full h-full ${project.code === 'renew' ? 'object-top' : 'object-center'}`} />
                                     <div className='absolute bottom-0 z-10 transition-all ease-in-out duration-500 opacity-0 group-hover:opacity-100 bg-white w-full h-full flex flex-col justify-between items-center py-5 md:py-10 px-5'>
                                         <div className='text-center'>
-                                            <p className='text-[#434343] text-[24px] font-bold fade-project-down'>{project.name}</p>
+                                            <p className='text-[#434343] text-[24px] font-bold fade-project-down mb-1'>{project.name}</p>
                                             <p className='text-[#E31B6D] text-reg font-medium fade-project-down'>{project.frontend} / {project.backend ? project.backend + ' /': null} {project.styles} / {project.language}</p>
                                         </div>
                                         <button value={project.code} onClick={() => {toggleModal(); setCurrentProject(project.code)}} className='fade-project-up transition-all duration-500 ease-in-out text-[#434343] hover:bg-[#E31B6D] hover:text-white border-2 border-[#E31B6D] py-2 px-6'>LEARN MORE</button>

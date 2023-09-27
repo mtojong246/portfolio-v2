@@ -17,6 +17,26 @@ export interface Project {
 export const projects = [
     {
         id: 1,
+        code: 'renew',
+        name: 'Renew Aesthetics',
+        description: 'A business website designed and developed for Renew Aesthetics, a medical spa located in Amherst, NY. **ONGOING**',
+        screenshots: [
+            '/renew/renew_main.png',
+            '/renew/renew_services.png',
+            '/renew/renew_service.png',
+            '/renew/renew_about.png',
+            '/renew/renew_contact.png',
+        ],
+        website: 'https://www.renewmedny.com/',
+        github: '',
+        frontend: 'Squarespace',
+        backend: '',
+        styles: 'CSS',
+        language: 'JavaScript',
+        delay: 100,
+    },
+    {
+        id: 2,
         code: 'my-pa-box',
         name: 'myPAbox Admin',
         description: 'An admin dashboard for creating, updating and deleting school data points to be displayed on the main myPabox website. **ONGOING**',
@@ -37,7 +57,7 @@ export const projects = [
         delay: 100,
     },
     {
-        id: 2,
+        id: 3,
         code: 'quiz-me',
         name: 'QuizMe',
         description: 'A full stack web app inspired by Quizlet, which provides students a tool for creating and reviewing digital flashcards. Includes "Flashcard" and "Learn" modes.',
@@ -59,7 +79,7 @@ export const projects = [
         delay: 200,
     },
     {
-        id: 3,
+        id: 4,
         code: 'knife-purveyor',
         name: 'Knife Purveyor',
         description: 'An e-commerce website re-designed for a local knife shop located in Wake Forest, NC.',
@@ -79,7 +99,7 @@ export const projects = [
         delay: 300,
     },
     {
-        id: 4,
+        id: 5,
         code: 'tesla-clone',
         name: 'Tesla Clone',
         description: 'A landing page inspired by the tesla website.',
@@ -99,7 +119,7 @@ export const projects = [
         delay: 400,
     },
     {
-        id: 5,
+        id: 6,
         code: 'pantry',
         name: 'Pantry',
         description: 'A full-stack website that generates recipes based on items in your pantry. Includes a customizable nutrition tracker, food log and grocery list.',
@@ -121,10 +141,10 @@ export const projects = [
         delay: 500
     },
     {
-        id: 6,
+        id: 7,
         code: 'primordial',
         name: 'Primordial',
-        description: '',
+        description: 'A point-and-click game based on the popular app "Little Alchemy."',
         screenshots: [
             '/primordial/primordial_title.png',
             '/primordial/primordial_start.png',

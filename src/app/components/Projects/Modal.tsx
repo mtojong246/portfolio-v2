@@ -18,7 +18,7 @@ export default function Modal({ toggleModal, currentProject }: { toggleModal: ()
     return (
         <>
         <div onClick={toggleModal} className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-slate-700 opacity-50 h-screen'></div>
-        <div className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-white h-screen flex flex-col lg:top-[50%] lg:left-[50%] lg:translate-x-[-50%] lg:translate-y-[-50%] lg:h-[900px] lg:w-[800px]'>
+        <div className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-white h-screen flex flex-col md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] md:h-[900px] md:w-[800px]'>
             <div className='w-full bg-white'>
                 <CarouselComp screenshots={proj.screenshots}/>
             </div>
@@ -42,9 +42,11 @@ export default function Modal({ toggleModal, currentProject }: { toggleModal: ()
                             <a href={proj.website} target='_blank' rel='noreferrer noopener'>
                                 <button className='transition-all duration-500 ease-in-out text-[#434343] hover:bg-[#E31B6D] hover:text-white border-2 border-[#E31B6D] py-2 px-6'>Website</button>
                             </a>
+                            {proj.github && (
                             <a href={proj.github} target='_blank' rel='noreferrer noopener'>
                                 <button className='transition-all duration-500 ease-in-out text-[#434343] hover:bg-[#E31B6D] hover:text-white border-2 border-[#E31B6D] py-2 px-6'>Source Code</button>
                             </a>
+                            )}
                         </>
                             )}
                         </div>
