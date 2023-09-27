@@ -18,9 +18,10 @@ export const projects = [
     {
         id: 1,
         code: 'my-pa-box',
-        name: 'myPAbox Admin Dashboard',
+        name: 'myPAbox Admin',
         description: 'An admin dashboard for creating, updating and deleting school data points to be displayed on the main myPabox website. **ONGOING**',
         screenshots: [
+            '/myPabox/pa_main.png',
             '/myPabox/pa_schools.png',
             '/myPabox/pa_sidebar.png',
             '/myPabox/pa_general_info.png',
