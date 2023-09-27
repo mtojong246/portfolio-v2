@@ -50,7 +50,7 @@ export default function NavBar() {
     }
     return (
         <>
-            <div className='w-full bg-[#001224] p-5 flex justify-between fixed z-20 transition-all ease-in-out duration-300' style={{ transform: isScrollingUp ? 'translateY(0)' : 'translateY(-100%)' }}>
+            <div id='navbar' className='w-full bg-[#001224] p-5 flex justify-between fixed z-20 transition-all ease-in-out duration-300' style={{ transform: isScrollingUp ? 'translateY(0)' : 'translateY(-100%)' }}>
                 <button onClick={refreshPage}><div className='fade-in w-[30px] h-[30px] flex justify-center items-center border border-[#1AFFC9] rounded'>
                     <p className='text-sm text-[#1AFFC9]'>M</p>
                 </div></button>

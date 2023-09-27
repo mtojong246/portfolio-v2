@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Modal from "./Modal"
 import { AnimationOnScroll } from "react-animation-on-scroll"
 import { projects } from "@/app/data/projects"
@@ -9,6 +9,22 @@ export default function Projects() {
     const [ currentProject, setCurrentProject ] = useState('')
 
     const toggleModal = () => setOpenModal(!openModal);
+
+    useEffect(() => {
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+            if (openModal) {
+                document.body.style.overflow = 'hidden';
+                navbar.style.display = 'none';
+            } else {
+                document.body.style.overflow = 'scroll';
+                navbar.style.display = 'block';
+            }
+        }
+        
+    }, [openModal])
+
+    console.log(openModal)
 
     return (
         <>
