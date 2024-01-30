@@ -16,7 +16,29 @@ export interface Project {
 
 export const projects = [
     {
-        id: 1,
+        id: 2,
+        code: 'ansa',
+        name: 'Events By Ansa',
+        description: 'A business website for a private event planner located in New Jersey.',
+        screenshots: [
+            '/ansa/ansa_home.png',
+            '/ansa/ansa_about.png',
+            '/ansa/ansa_services.png',
+            '/ansa/ansa_gallery.png',
+            '/ansa/ansa_blog.png',
+            '/ansa/ansa_contact.png',
+        ],
+        website: 'https://www.eventsbyansa.com/',
+        github: '',
+        figma: 'https://www.figma.com/file/HFbb02h6XuDXb3H6JTIYXe/Ansa-Events?type=design&node-id=0%3A1&mode=design&t=bv0coS1CbMqpogUU-1',
+        frontend: 'Wix',
+        backend: '',
+        styles: 'CSS',
+        language: 'JavaScript',
+        delay: 100,
+    },
+    {
+        id: 3,
         code: 'renew',
         name: 'Renew Aesthetics',
         description: 'A business website designed and developed for Renew Aesthetics, a medical spa located in Amherst, NY.',
@@ -37,7 +59,7 @@ export const projects = [
         delay: 100,
     },
     {
-        id: 2,
+        id: 4,
         code: 'my-pa-box',
         name: 'myPAbox Admin',
         description: 'An admin dashboard for creating, updating and deleting school data points to be displayed on the main myPabox website. **ONGOING**',
@@ -58,7 +80,7 @@ export const projects = [
         delay: 100,
     },
     {
-        id: 3,
+        id: 5,
         code: 'quiz-me',
         name: 'QuizMe',
         description: 'A full stack web app inspired by Quizlet, which provides students a tool for creating and reviewing digital flashcards. Includes "Flashcard" and "Learn" modes.',
@@ -80,7 +102,7 @@ export const projects = [
         delay: 200,
     },
     {
-        id: 4,
+        id: 6,
         code: 'knife-purveyor',
         name: 'Knife Purveyor',
         description: 'An e-commerce website re-designed for a local knife shop located in Wake Forest, NC.',
@@ -100,7 +122,7 @@ export const projects = [
         delay: 300,
     },
     {
-        id: 5,
+        id: 7,
         code: 'tesla-clone',
         name: 'Tesla Clone',
         description: 'A landing page inspired by the tesla website.',
@@ -119,45 +141,45 @@ export const projects = [
         language: 'JavaScript',
         delay: 400,
     },
-    {
-        id: 6,
-        code: 'pantry',
-        name: 'Pantry',
-        description: 'A full-stack website that generates recipes based on items in your pantry. Includes a customizable nutrition tracker, food log and grocery list.',
-        screenshots: [
-            '/pantry/pantry_title.png',
-            '/pantry/pantry_pantry.png',
-            '/pantry/pantry_recipes.png',
-            '/pantry/pantry_ingredients.png',
-            '/pantry/pantry_nutrition.png',
-            '/pantry/pantry_log.png',
-            '/pantry/pantry_grocery.png',
-        ],
-        website: 'https://mtojong246.github.io/pantry-app/',
-        github: 'https://github.com/mtojong246/pantry-app',
-        frontend: 'React',
-        backend: 'PostgreSQL',
-        styles: 'SCSS',
-        language: 'JavaScript',
-        delay: 500
-    },
-    {
-        id: 7,
-        code: 'primordial',
-        name: 'Primordial',
-        description: 'A point-and-click game based on the popular app "Little Alchemy."',
-        screenshots: [
-            '/primordial/primordial_title.png',
-            '/primordial/primordial_start.png',
-            '/primordial/primordial_gameplay.png',
-            '/primordial/primordial_encyclopedia.png',
-        ],
-        website: 'https://primordial-game.netlify.app/',
-        github: 'https://github.com/mtojong246/primordial',
-        frontend: 'React',
-        backend: '',
-        styles: 'SCSS',
-        language: 'JavaScript',
-        delay: 600
-    }
+    // {
+    //     id: 6,
+    //     code: 'pantry',
+    //     name: 'Pantry',
+    //     description: 'A full-stack website that generates recipes based on items in your pantry. Includes a customizable nutrition tracker, food log and grocery list.',
+    //     screenshots: [
+    //         '/pantry/pantry_title.png',
+    //         '/pantry/pantry_pantry.png',
+    //         '/pantry/pantry_recipes.png',
+    //         '/pantry/pantry_ingredients.png',
+    //         '/pantry/pantry_nutrition.png',
+    //         '/pantry/pantry_log.png',
+    //         '/pantry/pantry_grocery.png',
+    //     ],
+    //     website: 'https://mtojong246.github.io/pantry-app/',
+    //     github: 'https://github.com/mtojong246/pantry-app',
+    //     frontend: 'React',
+    //     backend: 'PostgreSQL',
+    //     styles: 'SCSS',
+    //     language: 'JavaScript',
+    //     delay: 500
+    // },
+    // {
+    //     id: 7,
+    //     code: 'primordial',
+    //     name: 'Primordial',
+    //     description: 'A point-and-click game based on the popular app "Little Alchemy."',
+    //     screenshots: [
+    //         '/primordial/primordial_title.png',
+    //         '/primordial/primordial_start.png',
+    //         '/primordial/primordial_gameplay.png',
+    //         '/primordial/primordial_encyclopedia.png',
+    //     ],
+    //     website: 'https://primordial-game.netlify.app/',
+    //     github: 'https://github.com/mtojong246/primordial',
+    //     frontend: 'React',
+    //     backend: '',
+    //     styles: 'SCSS',
+    //     language: 'JavaScript',
+    //     delay: 600
+    // }
 ]
