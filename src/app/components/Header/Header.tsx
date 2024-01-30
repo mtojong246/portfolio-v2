@@ -21,11 +21,9 @@ export default function Header() {
                         .typeString('design.')
                         .pauseFor(1800)
                         .deleteAll(30)
-                        .typeString('innovation.')
-                        .pauseFor(1800)
-                        .deleteAll(30)
                         .typeString('discovery.')
                         .pauseFor(1800)
+                        .deleteAll(30)
                         .start()
                     }}/></span></div>
                     {/* <p className='text-white'>
