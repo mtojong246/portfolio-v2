@@ -16,9 +16,9 @@ export default function Modal({ toggleModal, currentProject }: { toggleModal: ()
 
 
     return (
-        <>
-        <div onClick={toggleModal} className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-slate-700 opacity-50 h-screen'></div>
-        <div className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-white h-screen flex flex-col md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] md:h-[900px] md:w-[800px]'>
+        <div className='fixed top-0 bottom-0 right-0 left-0 flex justify-center items-center p-4'>
+        <div onClick={toggleModal} className='absolute top-0 bottom-0 right-0 left-0 z-10 bg-slate-700 opacity-50 '></div>
+        <div className='fixed top-0 bottom-0 right-0 left-0 z-10 bg-white h-screen flex flex-col md:static md:h-auto md:max-w-[800px]'>
             <div className='w-full bg-white'>
                 <CarouselComp screenshots={proj.screenshots}/>
             </div>
@@ -31,7 +31,7 @@ export default function Modal({ toggleModal, currentProject }: { toggleModal: ()
                         </div>
                         <p className="text-[#434343] text-sm">{proj.description}</p>
                     </div>
-                    <div className='flex justify-between items-center w-full'>
+                    <div className='flex justify-between items-center w-full mt-5'>
                         <div className='flex justify-center items-center gap-4'>
                         {proj.figma ? (
                             <a href={proj.figma} target='_blank' rel='noreferrer noopener'>
@@ -55,6 +55,6 @@ export default function Modal({ toggleModal, currentProject }: { toggleModal: ()
                 </div>
             )}
         </div>
-        </>
+        </div>
     )
 }
