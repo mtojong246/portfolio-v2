@@ -19,9 +19,10 @@ export const projects = [
         id: 1,
         code: 'renew',
         name: 'Renew Aesthetics',
-        description: 'A business website designed and developed for Renew Aesthetics, a medical spa located in Amherst, NY. **ONGOING**',
+        description: 'A business website designed and developed for Renew Aesthetics, a medical spa located in Amherst, NY.',
         screenshots: [
             '/renew/renew_main.png',
+            '/renew/renew_testimonials.png',
             '/renew/renew_services.png',
             '/renew/renew_service.png',
             '/renew/renew_about.png',
