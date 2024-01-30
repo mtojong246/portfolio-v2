@@ -86,9 +86,13 @@ export const projects = [
         screenshots: [
             '/myPabox/pa_main.png',
             '/myPabox/pa_schools.png',
-            '/myPabox/pa_sidebar.png',
-            '/myPabox/pa_general_info.png',
-            '/myPabox/pa_degree_info.png',
+            '/myPabox/pa_add_one.png',
+            '/myPabox/pa_add_two.png',
+            '/myPabox/pa_staff.png',
+            '/myPabox/pa_edit.png',
+            '/myPabox/pa_courses.png',
+            '/myPabox/pa_categories.png',
+            
         ],
         website: '',
         github: '',
